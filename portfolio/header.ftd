@@ -1,0 +1,124 @@
+-- import: ayushsoni1010.github.io/portfolio-website-fastn/assets
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Header Component **********
+
+-- component header:
+ftd.image-src logo:
+string logoURL:
+optional string header-item1:
+optional string header-item2:
+optional string header-item3:
+optional string header-item4:
+optional string header-item5:
+optional string header-item6:
+optional string header-item1-link:
+optional string header-item2-link:
+optional string header-item3-link:
+optional string header-item4-link:
+optional string header-item5-link:
+optional string header-item6-link:
+optional string cta-item1:
+optional string cta-item1-link:
+optional string cta-item2:
+optional string cta-item2-link:
+
+-- ftd.row:
+width: fill-container
+align-self: center
+spacing: space-between
+height: hug-content
+padding-vertical.px: 10
+padding-left.percent: 7.4
+padding-right.percent: 7.4
+
+-- ftd.image:
+link: $header.logoURL
+src: $header.logo
+width.fixed.px: 50
+
+-- ftd.row:
+margin-top.px: 20
+spacing.fixed.px: 30
+
+-- ftd.text: $header.header-item1
+role: $inherited.types.label-large
+link: $header.header-item1-link
+color: teal
+text-align: center
+
+-- ftd.text: $header.header-item2
+role: $inherited.types.label-large
+link: $header.header-item2-link
+color: teal
+text-align: center
+
+-- ftd.text: $header.header-item3
+role: $inherited.types.label-large
+link: $header.header-item3-link
+color: teal
+text-align: center
+
+-- ftd.text: $header.header-item4
+role: $inherited.types.label-large
+link: $header.header-item4-link
+color: teal
+text-align: center
+
+-- ftd.text: $header.header-item5
+role: $inherited.types.label-large
+link: $header.header-item5-link
+color: teal
+text-align: center
+
+-- ftd.text: $header.header-item6
+role: $inherited.types.label-large
+link: $header.header-item6-link
+color: teal
+text-align: center
+
+-- end: ftd.row
+
+-- ftd.row: 
+margin-top.px: 12
+spacing.fixed.px: 8
+
+-- ftd.text: $header.cta-item1
+role: $inherited.types.label-large
+open-in-new-tab: true
+link: $header.cta-item1-link
+color: teal
+border-color: teal
+border-width.px: 2
+background.solid: white
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- ftd.text: $header.cta-item2
+role: $inherited.types.label-large
+open-in-new-tab: true
+link: $header.cta-item2-link
+color: white
+background.solid: teal
+border-color: teal
+border-width.px: 2
+border-radius.px: 6
+padding-top.px: 8
+padding-bottom.px: 8
+padding-left.px: 14
+padding-right.px: 14
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
