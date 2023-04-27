@@ -30,6 +30,7 @@ width: fill-container
 align-self: center
 spacing: space-between
 height: hug-content
+padding-vertical.px: 10
 
 -- ftd.image:
 link: $header.logoURL
