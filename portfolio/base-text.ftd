@@ -1,0 +1,64 @@
+;; import: dependencies...
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Responsive Styles: BaseText Wrapper **********
+-- ftd.type text-wrapper-desktop-type:
+size.px: 60
+font-family: Inter
+line-height.px: 30
+
+-- ftd.type text-wrapper-mobile-type:
+size.px: 30
+font-family: Inter
+line-height.px: 15
+letter-spacing.px: 0
+
+-- ftd.responsive-type base-text-responsive-typography:
+desktop: $text-wrapper-desktop-type
+mobile: $text-wrapper-mobile-type
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** BaseText Component **********
+
+-- component base-text:
+string heading:
+string description:
+ftd.image-src imageURL:
+optional decimal imageWidth: 12
+optional integer positionTop: 0
+
+-- ftd.row:
+spacing.fixed.px: 5
+margin-top.px: 50
+margin-bottom.px: 20
+
+-- ftd.column:
+
+-- ftd.text: $base-text.heading
+role: $base-text-responsive-typography
+color: black
+style: heavy
+
+-- ftd.text: $base-text.description
+role: $base-text-responsive-typography
+color: teal
+style: heavy
+z-index: -1
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $base-text.imageURL
+width.fixed.percent: $base-text.imageWidth
+margin-top.px: $base-text.positionTop
+
+-- end: ftd.row
+
+-- end: base-text
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
