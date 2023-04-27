@@ -30,9 +30,6 @@ width: fill-container
 align-self: center
 spacing: space-between
 height: hug-content
-padding-vertical.px: 10
-padding-left.percent: 7.4
-padding-right.percent: 7.4
 
 -- ftd.image:
 link: $header.logoURL
