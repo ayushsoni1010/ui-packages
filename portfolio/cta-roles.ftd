@@ -50,6 +50,7 @@ mobile: $open-roles-cta-mobile-type
 string title:
 string description:
 string announced-link: https://ayushsoni1010.com/resume
+ftd.image-src imageURL: 
 
 -- ftd.container:
 background.solid: #cbd5e0
@@ -63,7 +64,7 @@ spacing.fixed.px: 15
 
 -- social.social-button-wrapper:
 link: $cta-roles.announced-link
-image: $assets.files.images.announce.png
+image: $cta-roles.imageURL
 
 -- end: social.social-button-wrapper
 
