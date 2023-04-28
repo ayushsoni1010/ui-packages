@@ -6,6 +6,7 @@
 ;; ********** Hero Toast Component **********
 
 -- component toast:
+string title:
 string link:
 
 -- ftd.container:
@@ -18,6 +19,14 @@ padding-vertical.px: 3
 padding-horizontal.px: 14
 align-self: center
 margin-top.px: 47
+
+-- ftd.text: $toast.title
+role: $inherited.types.label-large
+color: black
+text-align: center
+margin-top.px: 2
+
+-- end: ftd.container
 
 -- end: toast
 
