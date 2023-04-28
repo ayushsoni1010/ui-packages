@@ -1,0 +1,85 @@
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Responsive Styles: About description **********
+-- ftd.type about-description-desktop-type:
+size.px: 16
+font-family: Inter
+color: #1a202c
+line-height.px: 25
+style: regular
+
+-- ftd.type about-description-mobile-type:
+size.px: 14
+font-family: Inter
+color: #1a202c
+line-height.px: 30
+style: regular
+
+-- ftd.responsive-type about-description-responsive-typography:
+desktop: $about-description-desktop-type
+mobile: $about-description-mobile-type
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Responsive Styles: Open Roles CTA **********
+-- ftd.type open-roles-cta-desktop-type:
+size.px: 34
+weight: 800
+font-family: Inter
+color: black
+
+-- ftd.type open-roles-cta-mobile-type:
+size.px: 28
+weight: 700
+font-family: Inter
+color: black
+
+-- ftd.responsive-type open-roles-cta-responsive-typography:
+desktop: $open-roles-cta-desktop-type
+mobile: $open-roles-cta-mobile-type
+
+;; --------------------------------------------------------------
+
+;; ********** CTA Roles Component **********
+
+-- component cta-roles:
+string title:
+string description:
+string announced-link: https://ayushsoni1010.com/resume
+
+-- ftd.container:
+background.solid: #cbd5e0
+border-radius.px: 10
+padding.px: 40
+margin-top.px: 20
+margin-bottom.px: 50
+
+-- ftd.row:
+spacing.fixed.px: 15
+
+-- social.social-button-wrapper:
+link: $cta-roles.announced-link
+image: $assets.files.images.announce.png
+
+-- end: social.social-button-wrapper
+
+-- ftd.text: Open for roles
+align-self: center
+role: $open-roles-cta-responsive-typography
+
+-- end: ftd.row
+
+-- ftd.text: $cta-roles.description
+role: $about-description-responsive-typography
+margin-top.px: 10
+
+-- end: ftd.container
+
+-- end: cta-roles
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
