@@ -1,0 +1,34 @@
+-- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Footer Component **********
+
+-- component footer:
+string title:
+string link:
+ftd.ui list social-buttons:
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-self: center
+margin-top.px: 70
+margin-bottom.px: 20
+
+-- ftd.text: $footer.title
+color: black
+link: $footer.link
+role: $inherited.types.label-large
+margin-top.px: 13
+
+-- ftd.row:
+spacing.fixed.px: 10
+children: $footer.social-buttons
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer
