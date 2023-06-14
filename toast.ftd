@@ -1,0 +1,29 @@
+;; ********** Hero stack Component **********
+
+-- component stack:
+caption title:
+string link:
+
+-- ftd.container:
+link: $stack.link
+border-radius.px: 20
+border-width.px: 2
+border-color: #3182ce
+background.solid: #cbd5e0
+padding-vertical.px: 3
+padding-horizontal.px: 14
+align-self: center
+margin-top.px: 47
+
+-- ftd.text: $stack.title
+role: $inherited.types.label-large
+color: black
+text-align: center
+margin-top.px: 2
+
+-- end: ftd.container
+
+-- end: stack
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
