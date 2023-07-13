@@ -1,4 +1,4 @@
--- import: ayushsoni1010.github.io/ui-packages/portfolio/social-buttons as social
+-- import: package/social-buttons as social
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
